@@ -2,17 +2,22 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useAuth } from "@/components/providers/auth-provider";
 
 export function AuthPage() {
   const { isReady, user, login, register, logout } = useAuth();
   const [mode, setMode] = useState<"login" | "register">("login");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [feedback, setFeedback] = useState<{ type: "error" | "success"; text: string } | null>(
-    null
-  );
+  const [feedback, setFeedback] = useState<{ type: "error" | "success"; text: string } | null>(null);
   const router = useRouter();
+
+  // Auto-redirect already logged-in users to their account homepage
+  useEffect(() => {
+    if (isReady && user) {
+      router.replace("/account");
+    }
+  }, [isReady, user, router]);
 
   async function handleLogin(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
