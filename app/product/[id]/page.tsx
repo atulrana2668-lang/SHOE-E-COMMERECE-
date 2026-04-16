@@ -13,11 +13,11 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const product = getProductById(params.id);
   if (!product) {
-    return { title: "Product Not Found | Stride Studio" };
+    return { title: "Product Not Found | GOAT" };
   }
 
   return {
-    title: `${product.name} | Stride Studio`,
+    title: `${product.name} | GOAT`,
     description: product.story
   };
 }

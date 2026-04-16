@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { useCart } from "@/components/providers/cart-provider";
 import {
   audienceCards,
   formatPrice,
   getHomeFeaturedProducts,
+  getNewArrivals,
   homeStoryTiles,
   serviceHighlights
 } from "@/lib/store-data";
@@ -24,10 +26,22 @@ function StarRating({ value }: { value: number }) {
 
 export function HomePage() {
   const featuredProducts = getHomeFeaturedProducts();
+  const newArrivals = getNewArrivals().slice(0, 6);
   const { addItem } = useCart();
+  const [selectedSizes, setSelectedSizes] = useState<Record<string, string>>({});
+  const [addedToast, setAddedToast] = useState<Record<string, boolean>>({});
+
+  function handleAddToBag(product: typeof featuredProducts[0]) {
+    const size = selectedSizes[product.id] ?? String(product.sizes[0]);
+    addItem(product, size);
+    setAddedToast((prev) => ({ ...prev, [product.id]: true }));
+    setTimeout(() => { setAddedToast((prev) => ({ ...prev, [product.id]: false })); }, 1800);
+  }
 
   return (
     <div className="pageStack">
+
+      {/* ── Hero ──────────────────────────────────────────────────── */}
       <section className="heroHome heroHome--jordan">
         <div className="heroHome__copy">
           <p className="eyebrow eyebrow--gold">New Season · Exclusive Drop</p>
@@ -35,16 +49,12 @@ export function HomePage() {
             Air Jordan — The Icon Reimagined.
           </h2>
           <p className="sectionLead">
-            The most legendary silhouette in sneaker history, now available at Stride Studio.
+            The most legendary silhouette in sneaker history, now available at GOAT.
             Premium leather, iconic colourways, and a legacy that never goes out of style.
           </p>
           <div className="heroHome__actions">
-            <Link href="/men" className="button button--gold">
-              Shop Air Jordan
-            </Link>
-            <Link href="/women" className="buttonGhost">
-              Explore women
-            </Link>
+            <Link href="/men" className="button button--gold">Shop Air Jordan</Link>
+            <Link href="/women" className="buttonGhost">Explore women</Link>
           </div>
           <div className="statRow">
             <div className="statCard statCard--dark">
@@ -53,7 +63,7 @@ export function HomePage() {
             </div>
             <div className="statCard statCard--dark">
               <strong>Free delivery</strong>
-              <span>On orders above Rs 999</span>
+              <span>On orders above ₹999</span>
             </div>
             <div className="statCard statCard--dark">
               <strong>30 day returns</strong>
@@ -91,6 +101,7 @@ export function HomePage() {
         </div>
       </section>
 
+      {/* ── Shop by Audience ──────────────────────────────────────── */}
       <section className="pageStack">
         <div className="panelHeader">
           <div>
@@ -123,6 +134,63 @@ export function HomePage() {
         </div>
       </section>
 
+      {/* ── 🆕 New Arrivals Spotlight ─────────────────────────────── */}
+      {newArrivals.length > 0 && (
+        <section className="showcaseRail">
+          <div className="panelHeader">
+            <div>
+              <p className="eyebrow eyebrow--gold">🆕 Just Dropped</p>
+              <h2 className="sectionTitle">New Arrivals This Season</h2>
+            </div>
+            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+              <Link href="/men" className="buttonGhost">New in Men</Link>
+              <Link href="/women" className="buttonGhost">New in Women</Link>
+              <Link href="/kids" className="buttonGhost">New in Kids</Link>
+            </div>
+          </div>
+
+          <div className="newArrivalsScroll">
+            {newArrivals.map((product) => {
+              const discount = product.discountPrice
+                ? Math.round(((product.price - product.discountPrice) / product.price) * 100)
+                : 0;
+              return (
+                <article key={product.id} className="newArrivalCard">
+                  <Link href={`/product/${product.id}`} className="newArrivalCard__imageWrap" style={{ background: product.accent }}>
+                    <Image
+                      className="newArrivalCard__image"
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      sizes="280px"
+                    />
+                    <span className="newArrivalCard__newBadge">NEW</span>
+                    {discount > 0 && (
+                      <span className="newArrivalCard__discount">-{discount}%</span>
+                    )}
+                  </Link>
+                  <div className="newArrivalCard__body">
+                    <span className="newArrivalCard__category">{product.category} · {product.audience}</span>
+                    <Link href={`/product/${product.id}`} style={{ textDecoration: "none", color: "inherit" }}>
+                      <h4 className="newArrivalCard__name">{product.name}</h4>
+                    </Link>
+                    <StarRating value={product.rating} />
+                    <div className="newArrivalCard__footer">
+                      <div className="priceBlock">
+                        <strong>{formatPrice(product.discountPrice ?? product.price)}</strong>
+                        {product.discountPrice && <span>{formatPrice(product.price)}</span>}
+                      </div>
+                      <Link href={`/product/${product.id}`} className="button">View</Link>
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      {/* ── Promo banner ─────────────────────────────────────────── */}
       <section className="promoBanner">
         <div className="spaced">
           <span className="promoPill">New season edit</span>
@@ -142,6 +210,7 @@ export function HomePage() {
         </div>
       </section>
 
+      {/* ── Editorial tiles ───────────────────────────────────────── */}
       <section className="showcaseRail">
         <div className="panelHeader">
           <div>
@@ -176,35 +245,40 @@ export function HomePage() {
         </div>
       </section>
 
+      {/* ── Featured Products ─────────────────────────────────────── */}
       <section className="showcaseRail">
         <div className="panelHeader">
           <div>
             <p className="eyebrow">This week&apos;s picks</p>
-            <h2 className="sectionTitle">Featured products with real add-to-bag actions</h2>
+            <h2 className="sectionTitle">Featured products — select size and add to bag</h2>
           </div>
-          <Link href="/kids" className="buttonGhost">
-            Explore kids
-          </Link>
+          <Link href="/men" className="buttonGhost">View all</Link>
         </div>
 
         <div className="productGrid">
           {featuredProducts.map((product) => (
-            <article key={product.id} className="productCard">
-              <Link href={`/product/${product.id}`} className="productCard__linkWrap">
-                <div
-                  className="productCard__image"
-                  style={{ background: product.accent }}
-                >
-                  <span className="productCard__badge">{product.badge}</span>
-                  <Image
-                    className="productCard__media"
-                    src={product.image}
-                    alt={product.name}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 33vw"
-                  />
-                </div>
+            <article key={product.id} className="productCard productCard--v2">
+              <Link href={`/product/${product.id}`} className="productCard__imageLink" style={{ position: "absolute", inset: 0, zIndex: 1 }}>
+                <span className="sr-only">View {product.name}</span>
               </Link>
+              <div className="productCard__image" style={{ background: product.accent }}>
+                <Image
+                  className="productCard__media"
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 33vw"
+                />
+                <div className="productCard__badges">
+                  <span className="productCard__badge">{product.badge}</span>
+                  {product.isNew && <span className="productCard__newBadge">NEW</span>}
+                </div>
+                {product.discountPrice && (
+                  <span className="productCard__discount">
+                    -{Math.round(((product.price - product.discountPrice) / product.price) * 100)}%
+                  </span>
+                )}
+              </div>
               <div className="productCard__body">
                 <div className="productMeta">
                   <span>{product.collection}</span>
@@ -214,10 +288,26 @@ export function HomePage() {
                   <h3>{product.name}</h3>
                 </Link>
                 <p>{product.story}</p>
+                <div className="productSizes__label">
+                  Size: <strong className="productSizes__active">{selectedSizes[product.id] ?? String(product.sizes[0])}</strong>
+                </div>
                 <div className="productSizes">
-                  {product.sizes.slice(0, 5).map((size) => (
-                    <span key={size}>{size}</span>
-                  ))}
+                  {product.sizes.map((size) => {
+                    const s = String(size);
+                    const activeSize = selectedSizes[product.id] ?? String(product.sizes[0]);
+                    return (
+                      <button
+                        key={s}
+                        type="button"
+                        className={`sizeBtn${activeSize === s ? " sizeBtn--active" : ""}`}
+                        onClick={() => setSelectedSizes((prev) => ({ ...prev, [product.id]: s }))}
+                        aria-label={`Select size ${s}`}
+                        aria-pressed={activeSize === s}
+                      >
+                        {s}
+                      </button>
+                    );
+                  })}
                 </div>
                 <div className="productFooter">
                   <div className="priceBlock">
@@ -226,8 +316,12 @@ export function HomePage() {
                       <span>{formatPrice(product.price)}</span>
                     ) : null}
                   </div>
-                  <button className="button" onClick={() => addItem(product)}>
-                    Add to bag
+                  <button
+                    className={`button${addedToast[product.id] ? " button--added" : ""}`}
+                    onClick={() => handleAddToBag(product)}
+                    type="button"
+                  >
+                    {addedToast[product.id] ? "✓ Added!" : "Add to bag"}
                   </button>
                 </div>
               </div>
@@ -236,6 +330,7 @@ export function HomePage() {
         </div>
       </section>
 
+      {/* ── Editorial / Brand story ───────────────────────────────── */}
       <section className="editorialGrid">
         <article className="editorialCard editorialCard--dark">
           <p className="eyebrow">Why it works</p>
@@ -255,6 +350,7 @@ export function HomePage() {
         </article>
       </section>
 
+      {/* ── Service highlights ────────────────────────────────────── */}
       <section className="serviceGrid">
         {serviceHighlights.map((service) => (
           <article key={service.title} className="serviceCard">

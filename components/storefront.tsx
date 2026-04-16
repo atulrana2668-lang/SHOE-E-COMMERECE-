@@ -203,7 +203,7 @@ export function Storefront() {
           <span className="brand__mark">SS</span>
           <div>
             <p className="eyebrow">Premium footwear commerce</p>
-            <h1>Stride Studio</h1>
+            <h1>GOAT</h1>
           </div>
         </div>
 
@@ -464,7 +464,7 @@ export function Storefront() {
 
       <footer className="footer" id="contact">
         <div>
-          <p className="eyebrow">Stride Studio</p>
+          <p className="eyebrow">GOAT</p>
           <h3>Premium sneaker commerce, ready to launch.</h3>
         </div>
         <a className="button button--ghost" href="mailto:hello@stridestudio.example">

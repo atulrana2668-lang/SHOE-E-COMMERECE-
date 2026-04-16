@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import { useCart } from "@/components/providers/cart-provider";
 import { formatPrice, products as allProducts, type Product } from "@/lib/store-data";
 
-const WISHLIST_KEY = "stride-studio.wishlist";
+const WISHLIST_KEY = "goat.wishlist";
 
 function StarRating({ value }: { value: number }) {
   return (
@@ -224,7 +224,10 @@ export function ProductDetailPage({ product }: { product: Product }) {
                     <Link href={`/product/${rel.id}`} className="productCard__imageLink">
                       <Image className="productCard__media" src={rel.image} alt={rel.name} fill sizes="(max-width: 640px) 100vw, 25vw" />
                     </Link>
-                    <span className="productCard__badge">{rel.badge}</span>
+                    <div className="productCard__badges">
+                      <span className="productCard__badge">{rel.badge}</span>
+                      {rel.isNew && <span className="productCard__newBadge">NEW</span>}
+                    </div>
                     {relDiscount > 0 && <span className="productCard__discount">-{relDiscount}%</span>}
                     <WishlistBtn productId={rel.id} />
                   </div>

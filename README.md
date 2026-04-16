@@ -1,4 +1,4 @@
-# Stride Studio – Premium E-Commerce Frontend
+# GOAT – Premium E-Commerce Frontend
 
 A fully responsive, luxury-grade e-commerce frontend built to simulate a premium sneaker marketplace. This project was developed as an end-to-end frontend experience focusing heavily on custom UI/UX, complex CSS architecture without boilerplate libraries, and Next.js dynamic routing.
 

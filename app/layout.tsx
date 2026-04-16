@@ -6,7 +6,7 @@ import { SiteShell } from "@/components/site-shell";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Stride Studio | Premium Shoe Commerce",
+  title: "GOAT | Premium Shoe Commerce",
   description:
     "Responsive shoe commerce frontend with catalog pages, contact, and a working client-side authentication flow.",
   metadataBase: new URL("https://stridestudio.example")
