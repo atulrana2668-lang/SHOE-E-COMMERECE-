@@ -68,9 +68,9 @@ export function ProductDetailPage({ product }: { product: Product }) {
       <section className="productDetailLayout">
         {/* Left: Product Media */}
         <div className="productDetail__media" style={{ background: product.accent }}>
-          <span className="productCard__badge" style={{ top: "24px", left: "24px" }}>{product.badge}</span>
+          <span className="productCard__badge" style={{ top: "24px", left: "24px", bottom: "auto" }}>{product.badge}</span>
           {discount > 0 && (
-            <span className="productCard__discount" style={{ top: "24px", right: "24px", left: "auto" }}>
+            <span className="productCard__discount" style={{ top: "24px", right: "24px", left: "auto", bottom: "auto" }}>
               -{discount}%
             </span>
           )}
