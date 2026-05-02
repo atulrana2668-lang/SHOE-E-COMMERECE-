@@ -8,10 +8,21 @@ import {
   audienceCards,
   formatPrice,
   getHomeFeaturedProducts,
-  getNewArrivals,
-  homeStoryTiles,
   serviceHighlights
 } from "@/lib/store-data";
+
+const ribbonBrands = [
+  "Nike",
+  "Adidas",
+  "New Balance",
+  "Jordan",
+  "Puma",
+  "Reebok",
+  "Converse",
+  "Vans",
+  "Asics",
+  "Skechers"
+];
 
 function StarRating({ value }: { value: number }) {
   return (
@@ -26,7 +37,7 @@ function StarRating({ value }: { value: number }) {
 
 export function HomePage() {
   const featuredProducts = getHomeFeaturedProducts();
-  const newArrivals = getNewArrivals().slice(0, 6);
+  const newArrivals: typeof featuredProducts = [];
   const { addItem } = useCart();
   const [selectedSizes, setSelectedSizes] = useState<Record<string, string>>({});
   const [addedToast, setAddedToast] = useState<Record<string, boolean>>({});
@@ -135,6 +146,17 @@ export function HomePage() {
       </section>
 
       {/* ── 🆕 New Arrivals Spotlight ─────────────────────────────── */}
+      <section className="brandRibbon" aria-label="Featured footwear brands">
+        <div className="brandRibbon__track">
+          {[...ribbonBrands, ...ribbonBrands].map((brand, index) => (
+            <span className="brandRibbon__item" key={`${brand}-${index}`}>
+              {brand}
+              <span className="brandRibbon__spark">✦</span>
+            </span>
+          ))}
+        </div>
+      </section>
+
       {newArrivals.length > 0 && (
         <section className="showcaseRail">
           <div className="panelHeader">
@@ -211,40 +233,6 @@ export function HomePage() {
       </section>
 
       {/* ── Editorial tiles ───────────────────────────────────────── */}
-      <section className="showcaseRail">
-        <div className="panelHeader">
-          <div>
-            <p className="eyebrow">Photo-led editing</p>
-            <h2 className="sectionTitle">A more editorial first impression</h2>
-          </div>
-          <p className="sectionLead">
-            Photography and color now support the product story instead of competing
-            with it, which makes the storefront feel more premium at a glance.
-          </p>
-        </div>
-
-        <div className="lookbookGrid">
-          {homeStoryTiles.map((tile) => (
-            <article key={tile.title} className="lookbookCard">
-              <div className="lookbookCard__media">
-                <Image
-                  className="lookbookCard__image"
-                  src={tile.image}
-                  alt={tile.alt}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 33vw"
-                />
-              </div>
-              <div className="lookbookCard__copy">
-                <p className="eyebrow">{tile.eyebrow}</p>
-                <h3>{tile.title}</h3>
-                <p>{tile.description}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
       {/* ── Featured Products ─────────────────────────────────────── */}
       <section className="showcaseRail">
         <div className="panelHeader">

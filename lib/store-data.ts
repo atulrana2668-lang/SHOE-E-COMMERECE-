@@ -112,7 +112,7 @@ export const products: Product[] = [
     price: 5999, discountPrice: 4599, rating: 4.8, reviewCount: 218,
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#f59e64 0%,#f7d8b6 100%)",
-    sizes: ["6","7","8","9","10","11"], color: "#C68642"
+    sizes: ["6", "7", "8", "9", "10", "11"], color: "#C68642"
   },
   {
     id: "men-oxford-form",
@@ -122,7 +122,7 @@ export const products: Product[] = [
     price: 6499, discountPrice: 5199, rating: 4.7, reviewCount: 137,
     image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#635447 0%,#dbd0c4 100%)",
-    sizes: ["7","8","9","10","11"], color: "#8B5E3C"
+    sizes: ["7", "8", "9", "10", "11"], color: "#8B5E3C"
   },
   {
     id: "men-weekend-low",
@@ -132,7 +132,7 @@ export const products: Product[] = [
     price: 4299, discountPrice: 3499, rating: 4.6, reviewCount: 184,
     image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#53657d 0%,#dfe6f1 100%)",
-    sizes: ["6","7","8","9","10","11"], color: "#f5f5f5"
+    sizes: ["6", "7", "8", "9", "10", "11"], color: "#f5f5f5"
   },
   {
     id: "men-summer-slide",
@@ -142,7 +142,7 @@ export const products: Product[] = [
     price: 1999, discountPrice: 1499, rating: 4.5, reviewCount: 89,
     image: "https://images.unsplash.com/photo-1538146888063-3ecf5e002d7c?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#516f71 0%,#d6e8e6 100%)",
-    sizes: ["6","7","8","9","10"], color: "#888888"
+    sizes: ["6", "7", "8", "9", "10"], color: "#888888"
   },
   {
     id: "men-prime-loafer",
@@ -152,7 +152,7 @@ export const products: Product[] = [
     price: 7999, discountPrice: 6299, rating: 4.8, reviewCount: 92,
     image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#1c1c1c 0%,#4f4f4f 100%)",
-    sizes: ["7","8","9","10","11"], color: "#1a1a1a", isNew: true
+    sizes: ["7", "8", "9", "10", "11"], color: "#1a1a1a", isNew: true
   },
   {
     id: "men-hoops-elite",
@@ -162,7 +162,7 @@ export const products: Product[] = [
     price: 9499, discountPrice: 8499, rating: 4.9, reviewCount: 310,
     image: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#a30e15 0%,#e54045 100%)",
-    sizes: ["8","9","10","11","12"], color: "#C62828"
+    sizes: ["8", "9", "10", "11", "12"], color: "#C62828"
   },
   {
     id: "men-stormx-trail",
@@ -172,7 +172,7 @@ export const products: Product[] = [
     price: 8299, discountPrice: 6999, rating: 4.8, reviewCount: 145,
     image: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#18181b 0%,#52525b 100%)",
-    sizes: ["7","8","9","10","11"], color: "#1a1a1a"
+    sizes: ["7", "8", "9", "10", "11"], color: "#1a1a1a"
   },
   {
     id: "men-urban-drift",
@@ -182,7 +182,7 @@ export const products: Product[] = [
     price: 3799, discountPrice: 2999, rating: 4.5, reviewCount: 206,
     image: "https://images.unsplash.com/photo-1605812860427-4024433a70fd?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#5b6370 0%,#d8dce4 100%)",
-    sizes: ["6","7","8","9","10","11"], color: "#888888"
+    sizes: ["6", "7", "8", "9", "10", "11"], color: "#888888"
   },
   {
     id: "men-brogue-classic",
@@ -192,7 +192,7 @@ export const products: Product[] = [
     price: 8999, discountPrice: 7499, rating: 4.7, reviewCount: 78,
     image: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#7b5e44 0%,#e2cdb9 100%)",
-    sizes: ["7","8","9","10","11"], color: "#8B5E3C"
+    sizes: ["7", "8", "9", "10", "11"], color: "#8B5E3C"
   },
   {
     id: "men-speed-burst",
@@ -202,7 +202,7 @@ export const products: Product[] = [
     price: 12999, discountPrice: 10999, rating: 4.9, reviewCount: 189,
     image: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#1e40af 0%,#93c5fd 100%)",
-    sizes: ["7","8","9","10","11"], color: "#1565C0"
+    sizes: ["7", "8", "9", "10", "11"], color: "#1565C0"
   },
   {
     id: "men-cargo-slip",
@@ -212,7 +212,7 @@ export const products: Product[] = [
     price: 2499, discountPrice: 1899, rating: 4.4, reviewCount: 97,
     image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#b45309 0%,#fcd34d 100%)",
-    sizes: ["7","8","9","10","11"], color: "#C68642"
+    sizes: ["7", "8", "9", "10", "11"], color: "#C68642"
   },
   {
     id: "men-air-court",
@@ -222,7 +222,7 @@ export const products: Product[] = [
     price: 11499, discountPrice: 9999, rating: 4.9, reviewCount: 512,
     image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#f5f0e8 0%,#e8dcc8 100%)",
-    sizes: ["6","7","8","9","10","11","12"], color: "#f5f5f5"
+    sizes: ["6", "7", "8", "9", "10", "11", "12"], color: "#f5f5f5"
   },
   {
     id: "men-flex-mocassin",
@@ -232,7 +232,7 @@ export const products: Product[] = [
     price: 6999, rating: 4.6, reviewCount: 64,
     image: "https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#92400e 0%,#fde68a 100%)",
-    sizes: ["7","8","9","10","11"], color: "#8B5E3C", isNew: true
+    sizes: ["7", "8", "9", "10", "11"], color: "#8B5E3C", isNew: true
   },
   {
     id: "men-ultra-boost",
@@ -242,7 +242,7 @@ export const products: Product[] = [
     price: 13999, discountPrice: 11999, rating: 4.8, reviewCount: 421,
     image: "https://images.unsplash.com/photo-1513882891304-216f3fc9a0be?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#111827 0%,#6b7280 100%)",
-    sizes: ["7","8","9","10","11","12"], color: "#1a1a1a"
+    sizes: ["7", "8", "9", "10", "11", "12"], color: "#1a1a1a"
   },
   {
     id: "men-monk-strap",
@@ -252,7 +252,7 @@ export const products: Product[] = [
     price: 10499, discountPrice: 8999, rating: 4.8, reviewCount: 53,
     image: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#292524 0%,#78716c 100%)",
-    sizes: ["7","8","9","10","11"], color: "#1a1a1a"
+    sizes: ["7", "8", "9", "10", "11"], color: "#1a1a1a"
   },
   {
     id: "men-flip-coast",
@@ -262,7 +262,7 @@ export const products: Product[] = [
     price: 1499, rating: 4.3, reviewCount: 142,
     image: "https://images.unsplash.com/photo-1579338908476-3a3a1d71a706?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#0369a1 0%,#bae6fd 100%)",
-    sizes: ["7","8","9","10","11"], color: "#1565C0"
+    sizes: ["7", "8", "9", "10", "11"], color: "#1565C0"
   },
   {
     id: "men-chunky-plaza",
@@ -272,7 +272,7 @@ export const products: Product[] = [
     price: 7499, discountPrice: 6299, rating: 4.6, reviewCount: 287,
     image: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#d97706 0%,#fef3c7 100%)",
-    sizes: ["7","8","9","10","11"], color: "#C68642"
+    sizes: ["7", "8", "9", "10", "11"], color: "#C68642"
   },
   {
     id: "men-carbon-runner",
@@ -282,7 +282,7 @@ export const products: Product[] = [
     price: 14999, discountPrice: 12999, rating: 4.9, reviewCount: 77,
     image: "https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#134e4a 0%,#5eead4 100%)",
-    sizes: ["7","8","9","10","11"], color: "#2E7D32"
+    sizes: ["7", "8", "9", "10", "11"], color: "#2E7D32"
   },
   {
     id: "men-knit-everyday",
@@ -292,7 +292,7 @@ export const products: Product[] = [
     price: 5499, discountPrice: 4299, rating: 4.7, reviewCount: 335,
     image: "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#6366f1 0%,#c7d2fe 100%)",
-    sizes: ["7","8","9","10","11"], color: "#1565C0"
+    sizes: ["7", "8", "9", "10", "11"], color: "#1565C0"
   },
   {
     id: "men-desert-boot",
@@ -302,7 +302,7 @@ export const products: Product[] = [
     price: 8499, discountPrice: 7299, rating: 4.7, reviewCount: 101,
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#78350f 0%,#fde68a 100%)",
-    sizes: ["7","8","9","10","11"], color: "#8B5E3C"
+    sizes: ["7", "8", "9", "10", "11"], color: "#8B5E3C"
   },
 
   // ─── WOMEN — 20 products ──────────────────────────────────────────────────
@@ -314,7 +314,7 @@ export const products: Product[] = [
     price: 4899, discountPrice: 3899, rating: 4.9, reviewCount: 264,
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#f2a1aa 0%,#ffe1e6 100%)",
-    sizes: ["4","5","6","7","8","9"], color: "#E91E8C"
+    sizes: ["4", "5", "6", "7", "8", "9"], color: "#E91E8C"
   },
   {
     id: "women-city-ballet",
@@ -324,7 +324,7 @@ export const products: Product[] = [
     price: 3199, discountPrice: 2599, rating: 4.7, reviewCount: 151,
     image: "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#d98e87 0%,#f8d6d2 100%)",
-    sizes: ["4","5","6","7","8"], color: "#E91E8C"
+    sizes: ["4", "5", "6", "7", "8"], color: "#E91E8C"
   },
   {
     id: "women-dune-heel",
@@ -334,7 +334,7 @@ export const products: Product[] = [
     price: 5499, discountPrice: 4299, rating: 4.6, reviewCount: 98,
     image: "https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#d09e76 0%,#f5dfca 100%)",
-    sizes: ["4","5","6","7","8"], color: "#C68642"
+    sizes: ["4", "5", "6", "7", "8"], color: "#C68642"
   },
   {
     id: "women-bloom-sandal",
@@ -344,7 +344,7 @@ export const products: Product[] = [
     price: 2799, discountPrice: 2199, rating: 4.5, reviewCount: 112,
     image: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#f3bd8f 0%,#fff0db 100%)",
-    sizes: ["4","5","6","7","8"], color: "#C68642"
+    sizes: ["4", "5", "6", "7", "8"], color: "#C68642"
   },
   {
     id: "women-trail-blaze",
@@ -354,7 +354,7 @@ export const products: Product[] = [
     price: 6899, discountPrice: 5599, rating: 4.7, reviewCount: 142,
     image: "https://images.unsplash.com/photo-1579338908476-3a3a1d71a706?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#1b3a6b 0%,#5b8db8 100%)",
-    sizes: ["5","6","7","8"], color: "#1565C0"
+    sizes: ["5", "6", "7", "8"], color: "#1565C0"
   },
   {
     id: "women-stella-mule",
@@ -364,7 +364,7 @@ export const products: Product[] = [
     price: 3499, discountPrice: 2899, rating: 4.6, reviewCount: 201,
     image: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#c7bca1 0%,#f0e6d2 100%)",
-    sizes: ["4","5","6","7","8"], color: "#f5f5f5"
+    sizes: ["4", "5", "6", "7", "8"], color: "#f5f5f5"
   },
   {
     id: "women-run-plush",
@@ -374,7 +374,7 @@ export const products: Product[] = [
     price: 7499, discountPrice: 6299, rating: 4.8, reviewCount: 319,
     image: "https://images.unsplash.com/photo-1513882891304-216f3fc9a0be?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#db2777 0%,#fbcfe8 100%)",
-    sizes: ["4","5","6","7","8","9"], color: "#E91E8C"
+    sizes: ["4", "5", "6", "7", "8", "9"], color: "#E91E8C"
   },
   {
     id: "women-kitten-court",
@@ -384,7 +384,7 @@ export const products: Product[] = [
     price: 4599, discountPrice: 3799, rating: 4.7, reviewCount: 88,
     image: "https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#831843 0%,#fbcfe8 100%)",
-    sizes: ["4","5","6","7","8"], color: "#E91E8C"
+    sizes: ["4", "5", "6", "7", "8"], color: "#E91E8C"
   },
   {
     id: "women-woven-slip",
@@ -394,7 +394,7 @@ export const products: Product[] = [
     price: 3299, discountPrice: 2699, rating: 4.6, reviewCount: 175,
     image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#a16207 0%,#fef9c3 100%)",
-    sizes: ["4","5","6","7","8"], color: "#C68642"
+    sizes: ["4", "5", "6", "7", "8"], color: "#C68642"
   },
   {
     id: "women-stiletto-night",
@@ -404,7 +404,7 @@ export const products: Product[] = [
     price: 7999, discountPrice: 6499, rating: 4.8, reviewCount: 63,
     image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#1c1917 0%,#78716c 100%)",
-    sizes: ["4","5","6","7"], color: "#1a1a1a"
+    sizes: ["4", "5", "6", "7"], color: "#1a1a1a"
   },
   {
     id: "women-air-max-cloud",
@@ -414,7 +414,7 @@ export const products: Product[] = [
     price: 10999, discountPrice: 9499, rating: 4.9, reviewCount: 607,
     image: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#f9a8d4 0%,#fdf2f8 100%)",
-    sizes: ["4","5","6","7","8","9"], color: "#E91E8C"
+    sizes: ["4", "5", "6", "7", "8", "9"], color: "#E91E8C"
   },
   {
     id: "women-loafer-gold",
@@ -424,7 +424,7 @@ export const products: Product[] = [
     price: 8499, discountPrice: 7199, rating: 4.7, reviewCount: 134,
     image: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#854d0e 0%,#fef08a 100%)",
-    sizes: ["4","5","6","7","8"], color: "#C68642"
+    sizes: ["4", "5", "6", "7", "8"], color: "#C68642"
   },
   {
     id: "women-platform-white",
@@ -434,7 +434,7 @@ export const products: Product[] = [
     price: 5999, discountPrice: 4999, rating: 4.7, reviewCount: 298,
     image: "https://images.unsplash.com/photo-1605812860427-4024433a70fd?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#f8fafc 0%,#e2e8f0 100%)",
-    sizes: ["4","5","6","7","8"], color: "#f5f5f5"
+    sizes: ["4", "5", "6", "7", "8"], color: "#f5f5f5"
   },
   {
     id: "women-terracotta-flat",
@@ -444,7 +444,7 @@ export const products: Product[] = [
     price: 3799, discountPrice: 3199, rating: 4.5, reviewCount: 89,
     image: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#c2410c 0%,#fed7aa 100%)",
-    sizes: ["4","5","6","7","8"], color: "#C62828"
+    sizes: ["4", "5", "6", "7", "8"], color: "#C62828"
   },
   {
     id: "women-wedge-rope",
@@ -454,7 +454,7 @@ export const products: Product[] = [
     price: 4299, discountPrice: 3599, rating: 4.6, reviewCount: 117,
     image: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#ca8a04 0%,#fef9c3 100%)",
-    sizes: ["4","5","6","7","8"], color: "#C68642"
+    sizes: ["4", "5", "6", "7", "8"], color: "#C68642"
   },
   {
     id: "women-toe-ring",
@@ -464,7 +464,7 @@ export const products: Product[] = [
     price: 2199, discountPrice: 1799, rating: 4.4, reviewCount: 132,
     image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#92400e 0%,#fde68a 100%)",
-    sizes: ["4","5","6","7","8"], color: "#C68642"
+    sizes: ["4", "5", "6", "7", "8"], color: "#C68642"
   },
   {
     id: "women-night-run",
@@ -474,7 +474,7 @@ export const products: Product[] = [
     price: 7999, discountPrice: 6499, rating: 4.7, reviewCount: 174,
     image: "https://images.unsplash.com/photo-1538146888063-3ecf5e002d7c?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#0f172a 0%,#38bdf8 100%)",
-    sizes: ["4","5","6","7","8","9"], color: "#1565C0", isNew: true
+    sizes: ["4", "5", "6", "7", "8", "9"], color: "#1565C0", isNew: true
   },
   {
     id: "women-chelsea-boot",
@@ -484,7 +484,7 @@ export const products: Product[] = [
     price: 8999, discountPrice: 7499, rating: 4.8, reviewCount: 91,
     image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#292524 0%,#a8a29e 100%)",
-    sizes: ["4","5","6","7","8"], color: "#1a1a1a"
+    sizes: ["4", "5", "6", "7", "8"], color: "#1a1a1a"
   },
   {
     id: "women-satin-mule",
@@ -494,7 +494,7 @@ export const products: Product[] = [
     price: 6499, discountPrice: 5199, rating: 4.8, reviewCount: 58,
     image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#4a044e 0%,#f5d0fe 100%)",
-    sizes: ["4","5","6","7","8"], color: "#888888"
+    sizes: ["4", "5", "6", "7", "8"], color: "#888888"
   },
   {
     id: "women-birken-style",
@@ -504,7 +504,7 @@ export const products: Product[] = [
     price: 4499, discountPrice: 3699, rating: 4.9, reviewCount: 388,
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#a3804c 0%,#f5e6c8 100%)",
-    sizes: ["4","5","6","7","8","9"], color: "#888888"
+    sizes: ["4", "5", "6", "7", "8", "9"], color: "#888888"
   },
 
   // ─── KIDS — 20 products ───────────────────────────────────────────────────
@@ -516,7 +516,7 @@ export const products: Product[] = [
     price: 2699, discountPrice: 2199, rating: 4.8, reviewCount: 203,
     image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#4d8eaa 0%,#d8edf8 100%)",
-    sizes: ["28","29","30","31","32","33"], color: "#1565C0"
+    sizes: ["28", "29", "30", "31", "32", "33"], color: "#1565C0"
   },
   {
     id: "kids-play-pop",
@@ -526,7 +526,7 @@ export const products: Product[] = [
     price: 2399, discountPrice: 1899, rating: 4.7, reviewCount: 144,
     image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#74b37a 0%,#ddf4de 100%)",
-    sizes: ["25","26","27","28","29","30"], color: "#2E7D32"
+    sizes: ["25", "26", "27", "28", "29", "30"], color: "#2E7D32"
   },
   {
     id: "kids-rainy-splash",
@@ -536,7 +536,7 @@ export const products: Product[] = [
     price: 1699, discountPrice: 1299, rating: 4.5, reviewCount: 87,
     image: "https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#4aa5a0 0%,#d3f2ee 100%)",
-    sizes: ["24","25","26","27","28","29"], color: "#2E7D32"
+    sizes: ["24", "25", "26", "27", "28", "29"], color: "#2E7D32"
   },
   {
     id: "kids-tiny-steps",
@@ -546,7 +546,7 @@ export const products: Product[] = [
     price: 1899, discountPrice: 1499, rating: 4.9, reviewCount: 75,
     image: "https://images.unsplash.com/photo-1513882891304-216f3fc9a0be?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#f2a56b 0%,#ffe2c9 100%)",
-    sizes: ["21","22","23","24","25"], color: "#C68642"
+    sizes: ["21", "22", "23", "24", "25"], color: "#C68642"
   },
   {
     id: "kids-glow-runner",
@@ -556,7 +556,7 @@ export const products: Product[] = [
     price: 2899, discountPrice: 2299, rating: 4.9, reviewCount: 420,
     image: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#ffcc00 0%,#fff080 100%)",
-    sizes: ["26","27","28","29","30"], color: "#C68642"
+    sizes: ["26", "27", "28", "29", "30"], color: "#C68642"
   },
   {
     id: "kids-campus-velcro",
@@ -566,7 +566,7 @@ export const products: Product[] = [
     price: 2199, rating: 4.5, reviewCount: 168,
     image: "https://images.unsplash.com/photo-1579338908476-3a3a1d71a706?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#2b2b2b 0%,#6e6e6e 100%)",
-    sizes: ["28","29","30","31","32"], color: "#1a1a1a"
+    sizes: ["28", "29", "30", "31", "32"], color: "#1a1a1a"
   },
   {
     id: "kids-dino-sport",
@@ -576,7 +576,7 @@ export const products: Product[] = [
     price: 2599, discountPrice: 2099, rating: 4.8, reviewCount: 356,
     image: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#15803d 0%,#bbf7d0 100%)",
-    sizes: ["24","25","26","27","28","29"], color: "#2E7D32"
+    sizes: ["24", "25", "26", "27", "28", "29"], color: "#2E7D32"
   },
   {
     id: "kids-bubble-sandal",
@@ -586,7 +586,7 @@ export const products: Product[] = [
     price: 1499, discountPrice: 1199, rating: 4.6, reviewCount: 244,
     image: "https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#0ea5e9 0%,#bae6fd 100%)",
-    sizes: ["22","23","24","25","26"], color: "#1565C0"
+    sizes: ["22", "23", "24", "25", "26"], color: "#1565C0"
   },
   {
     id: "kids-princess-flat",
@@ -596,7 +596,7 @@ export const products: Product[] = [
     price: 1799, discountPrice: 1399, rating: 4.7, reviewCount: 189,
     image: "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#db2777 0%,#fbcfe8 100%)",
-    sizes: ["24","25","26","27","28","29"], color: "#E91E8C"
+    sizes: ["24", "25", "26", "27", "28", "29"], color: "#E91E8C"
   },
   {
     id: "kids-mud-trekker",
@@ -606,7 +606,7 @@ export const products: Product[] = [
     price: 2999, discountPrice: 2499, rating: 4.8, reviewCount: 136,
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#44403c 0%,#d6d3d1 100%)",
-    sizes: ["28","29","30","31","32"], color: "#1a1a1a"
+    sizes: ["28", "29", "30", "31", "32"], color: "#1a1a1a"
   },
   {
     id: "kids-unicorn-glitter",
@@ -616,7 +616,7 @@ export const products: Product[] = [
     price: 2099, discountPrice: 1699, rating: 4.8, reviewCount: 521,
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#7c3aed 0%,#f3e8ff 100%)",
-    sizes: ["24","25","26","27","28","29"], color: "#888888", isNew: true
+    sizes: ["24", "25", "26", "27", "28", "29"], color: "#888888", isNew: true
   },
   {
     id: "kids-speedy-track",
@@ -626,7 +626,7 @@ export const products: Product[] = [
     price: 2499, discountPrice: 1999, rating: 4.7, reviewCount: 277,
     image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#dc2626 0%,#fca5a5 100%)",
-    sizes: ["26","27","28","29","30","31"], color: "#C62828"
+    sizes: ["26", "27", "28", "29", "30", "31"], color: "#C62828"
   },
   {
     id: "kids-cotton-espadrille",
@@ -636,7 +636,7 @@ export const products: Product[] = [
     price: 1599, discountPrice: 1299, rating: 4.5, reviewCount: 91,
     image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#a16207 0%,#fef9c3 100%)",
-    sizes: ["22","23","24","25","26"], color: "#C68642"
+    sizes: ["22", "23", "24", "25", "26"], color: "#C68642"
   },
   {
     id: "kids-superstar-mini",
@@ -646,7 +646,7 @@ export const products: Product[] = [
     price: 3299, discountPrice: 2799, rating: 4.9, reviewCount: 482,
     image: "https://images.unsplash.com/photo-1538146888063-3ecf5e002d7c?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#f8fafc 0%,#e2e8f0 100%)",
-    sizes: ["26","27","28","29","30","31"], color: "#f5f5f5", isNew: true
+    sizes: ["26", "27", "28", "29", "30", "31"], color: "#f5f5f5", isNew: true
   },
   {
     id: "kids-jungle-velcro",
@@ -656,7 +656,7 @@ export const products: Product[] = [
     price: 1899, discountPrice: 1599, rating: 4.6, reviewCount: 108,
     image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#365314 0%,#d9f99d 100%)",
-    sizes: ["24","25","26","27","28","29"], color: "#2E7D32"
+    sizes: ["24", "25", "26", "27", "28", "29"], color: "#2E7D32"
   },
   {
     id: "kids-canvas-school",
@@ -666,7 +666,7 @@ export const products: Product[] = [
     price: 1999, discountPrice: 1649, rating: 4.5, reviewCount: 223,
     image: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#1e3a5f 0%,#bfdbfe 100%)",
-    sizes: ["28","29","30","31","32","33"], color: "#1565C0"
+    sizes: ["28", "29", "30", "31", "32", "33"], color: "#1565C0"
   },
   {
     id: "kids-first-crawler",
@@ -676,7 +676,7 @@ export const products: Product[] = [
     price: 1699, discountPrice: 1399, rating: 4.9, reviewCount: 67,
     image: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#fce7f3 0%,#fff1f2 100%)",
-    sizes: ["18","19","20","21","22"], color: "#E91E8C"
+    sizes: ["18", "19", "20", "21", "22"], color: "#E91E8C"
   },
   {
     id: "kids-croc-clogs",
@@ -686,7 +686,7 @@ export const products: Product[] = [
     price: 1299, discountPrice: 999, rating: 4.7, reviewCount: 639,
     image: "https://images.unsplash.com/photo-1605812860427-4024433a70fd?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#f59e0b 0%,#fef3c7 100%)",
-    sizes: ["22","23","24","25","26","27"], color: "#C68642"
+    sizes: ["22", "23", "24", "25", "26", "27"], color: "#C68642"
   },
   {
     id: "kids-toddler-strap",
@@ -696,7 +696,7 @@ export const products: Product[] = [
     price: 1799, discountPrice: 1499, rating: 4.8, reviewCount: 88,
     image: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#0f766e 0%,#99f6e4 100%)",
-    sizes: ["20","21","22","23","24"], color: "#2E7D32"
+    sizes: ["20", "21", "22", "23", "24"], color: "#2E7D32"
   },
   {
     id: "kids-future-runner",
@@ -706,7 +706,7 @@ export const products: Product[] = [
     price: 3499, discountPrice: 2899, rating: 4.8, reviewCount: 154,
     image: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=800&q=80",
     accent: "linear-gradient(135deg,#1e40af 0%,#93c5fd 100%)",
-    sizes: ["28","29","30","31","32","33"], color: "#1565C0"
+    sizes: ["28", "29", "30", "31", "32", "33"], color: "#1565C0"
   }
 ];
 
@@ -738,8 +738,8 @@ export const contactSpotlight: ContactSpotlight = {
   eyebrow: "Customer care",
   title: "Fit advice, delivery help, and simple next steps.",
   body: "Our friendly support team is here daily from 9 AM to 9 PM to help you with fit, delivery, exchanges, and anything else you need.",
-  image: "https://images.unsplash.com/photo-1538146888063-3ecf5e002d7c?auto=format&fit=crop&w=800&q=80",
-  alt: "Friendly customer care representative ready to help with your order",
+  image: "/customer-care.png",
+  alt: "Customer care specialist ready to help with your order",
   chips: ["Order updates", "Fit advice", "Exchange help", "Store care"]
 };
 
